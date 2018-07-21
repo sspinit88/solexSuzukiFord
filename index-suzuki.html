@@ -55,7 +55,7 @@
                         Запчасти и расходные материалы в наличии
                     </b>
                 </p>
-                <a href="#form" class="headerBtn scrollEor">
+                <a href="#form" class="headerBtn goToForm">
                     Оставить заявку
                 </a>
                 <div class="headerImgBig">
@@ -191,7 +191,7 @@
                     <a href="img/PRICE%20SOLEX%20AUTO%20SUZUKI.pdf" target="_blank">
                         Все услуги
                     </a>
-                    <a href="#form">
+                    <a href="#form" class="goToForm">
                         Оставить заявку
                     </a>
                 </div><!--servicesBtnBlock-->
@@ -528,7 +528,7 @@
                 </div><!--workTextItem-4-->
             </div><!--workTextBlock-->
         </div><!--workBlock-->
-        <a href="#form" class="workBtn">
+        <a href="#form" class="workBtn  goToForm">
             Оставить заявку
         </a>
     </div><!--wrapper-->
@@ -620,19 +620,8 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.3.5/jquery.fancybox.min.js"></script>
 <!--карты google-->
 <script>
-   /* function initMap() {
-        var uluru = {lat: 51.687195, lng: 39.165818};
-        var map = new google.maps.Map(document.getElementById('map'), {
-            zoom: 17,
-            center: uluru
-        });
-        var marker = new google.maps.Marker({
-            position: uluru,
-            map: map
-        });
-    }*/
-/*slider*/
     $(document).ready(function () {
+        /*Слайдеры*/
         $('.sliderUp').slick({
             dots: false,
             autoplay: true,
@@ -651,9 +640,7 @@
                 }
             ]
         });
-    });
-//////////////////////////////////
-  $(document).ready(function () {
+
         $('.revSlider').slick({
             dots: false,
             autoplay: true,
@@ -672,10 +659,20 @@
                 }
             ]
         });
+
+        /*Оставить заявку*/
+        var $links = $('.goToForm');
+        var $form = $('#form');
+
+        $links.on('click', function (e) {
+            e.preventDefault();
+
+            $('html, body').animate({
+                scrollTop: $form.offset().top
+            }, 1500)
+
+        })
     });
 </script>
-<!--<script async defer-->
-        <!--src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA3NYZyVQA7L5ipF9OgT6cVbSv1p_1x1VY&callback=initMap">-->
-<!--</script>-->
 </body>
 </html>
