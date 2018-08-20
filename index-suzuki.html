@@ -534,7 +534,7 @@
     </div><!--wrapper-->
 </section><!--workSection-->
 
-<section class="revSection  revSection--formSection"   id="form" >
+<section class="revSection  revSection--formSection" id="form">
     <div class="wrapper">
         <div class="formSectionBlock">
             <div class="formTextBlock">
@@ -552,10 +552,10 @@
                 </p>
             </div>
             <div class="formBlock">
-                <form method="post" >
-                    <input type="text" placeholder="ФИО">
-                    <input type="text" placeholder="Телефон">
-                    <input type="submit" value="Оставить заявку">
+                <form method="post">
+                    <input type="text" placeholder="ФИО" data-validation="name" class="input">
+                    <input type="text" placeholder="Телефон" data-validation="tell" class="input">
+                    <input type="submit" value="Оставить заявку" >
                 </form>
                 <p>
                     Нажимая на кнопку “Отправить”, Вы даете согласие
@@ -671,7 +671,37 @@
                 scrollTop: $form.offset().top
             }, 1500)
 
-        })
+        });
+
+        /*Валидация Формы*/
+        var $form = $('form');
+        var $inp = $('.input');
+        var patterns = {
+            name: /^[a-zA-Zа-яА-Я0-9]+$/,
+            tell: /^(\s*)?(\+)?([- _():=+]?\d[- _():=+]?){10,14}(\s*)?$/,
+        };
+        $form.on('submit', function (e) {
+            var err = false;
+
+            for(var i = 0; i < $inp.length; i++){
+
+                var val = $inp.eq(i).val().trim();
+                var validation = $inp.eq(i).data('validation');
+                var pattern = (validation in patterns) ? patterns[validation] : /.+/ ;
+
+                if(pattern.test(val)){
+                    $inp.eq(i).removeClass('formBlockErr');
+                }
+                else{
+                    err = true;
+                    $inp.eq(i).addClass('formBlockErr');
+                }
+                if(err){
+                    e.preventDefault();
+                }
+            } // for
+        }) // submit
+
     });
 </script>
 </body>
