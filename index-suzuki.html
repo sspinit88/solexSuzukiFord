@@ -16,7 +16,7 @@
 <header class="header">
     <div class="wrapper">
         <div class="headerTop">
-            <div class="headerLogo">
+            <div class="headerLogo d-none">
                 <a href="#">
                     <img src="img/logoSolex-auto.png" alt="">
                 </a>
@@ -668,7 +668,7 @@
             e.preventDefault();
 
             $('html, body').animate({
-                scrollTop: $form.offset().top
+                scrollTop: $form.offset().top - 100
             }, 1500)
 
         });
@@ -700,9 +700,8 @@
                     e.preventDefault();
                 }
             } // for
-        }) // submit
-
-    });
+        }); // submit
+    }); // ready
 </script>
 </body>
 </html>
