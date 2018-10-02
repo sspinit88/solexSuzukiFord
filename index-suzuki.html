@@ -8,15 +8,14 @@
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="slick/slick.css">
     <link rel="stylesheet" href="slick/slick-theme.css">
-    <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.3.5/jquery.fancybox.min.css" />
+    <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-
 <header class="header">
     <div class="wrapper">
         <div class="headerTop">
-            <div class="headerLogo d-none">
+            <div class="headerLogo">
                 <a href="#">
                     <img src="img/logoSolex-auto.png" alt="">
                 </a>
@@ -76,10 +75,9 @@
         </div><!--headerCenter-->
     </div><!--wrapper-->
 </header>
-
 <section class="aboutSection">
     <div class="wrapper">
-        <div class="aboutBlock">
+        <div class="aboutBlock  animate" data-animate="fadeIn">
             <h2>Наша <b>компания</b></h2>
             <div class="aboutTextBlock">
                 <p>
@@ -115,14 +113,13 @@
         </div><!--aboutBlock-->
     </div><!--wrapper-->
 </section><!--aboutSection-->
-
 <section class="servicesSection">
     <div class="wrapper">
         <div class="servicesBlock">
-            <h2>
+            <h2 class="animate" data-animate="flipInX">
                 <b>услуги</b> <span>solex</span>-auto
             </h2>
-            <div class="services">
+            <div class="services  animate" data-animate="slideInUp">
                 <a  class="servicesImg">
                     <span class="servicesImg__img">
                          <img src="img/serv-1.png" alt="">
@@ -199,14 +196,13 @@
         </div><!--servicesBlock-->
     </div><!--wrapper-->
 </section><!--servicesSection-->
-
 <section class="sliderUpSection">
     <div class="wrapper">
         <div class="sliderUpBlock">
-            <h2>
+            <h2 class="animate" data-animate="flipInX">
                 <b>Запчасти</b> на <b>Suzuki</b>
             </h2>
-            <div class="sliderUp">
+            <div class="sliderUp animate" data-animate="fadeIn">
                 <div class="sliderUp__item">
                     <div class="sliderUpImgBlock">
                         <a href="#" class="sliderUpImg">
@@ -263,7 +259,6 @@
                         </a><!--sliderUpImg-4-->
                     </div><!--sliderUpImgBlock"-->
                 </div><!--sliderUp__item-1-->
-
             </div><!--sliderUp-->
             <a href="#" class="sliderUpBtn">
                 Все запчасти
@@ -279,11 +274,10 @@
         </div><!--sliderUpBlock-->
     </div><!--wrapper-->
 </section><!--sliderUpSection-->
-
-<section class="infoSection">
+<section class="infoSection animate" data-animate="fadeIn">
     <div class="wrapper">
         <div class="infoBlock">
-            <div class="info">
+            <div class="info  animate" data-animate="toLeft">
                 <p>
                     4
                 </p>
@@ -291,7 +285,7 @@
                     года работы
                 </span>
             </div>
-            <div class="info">
+            <div class="info  animate" data-animate="slideInUp">
                 <p>
                     1 950
                 </p>
@@ -299,7 +293,7 @@
                     выполненных заказов
                 </span>
             </div>
-            <div class="info">
+            <div class="info  animate" data-animate="toRight">
                 <p>
                     2 120
                 </p>
@@ -310,14 +304,13 @@
         </div><!--infoBlock-->
     </div><!--wrapper-->
 </section><!--infoSection-->
-
 <section class="plusSection">
     <div class="wrapper">
         <div class="plusBlock">
-            <h2>
+            <h2 class="animate" data-animate="flipInX">
                 наши <b>преимущества</b>
             </h2>
-            <div class="plusImg">
+            <div class="plusImg  animate" data-animate="slideInUp">
                 <img src="img/car.png" alt="">
                     <a class="plusItem">
                     <span>
@@ -381,23 +374,22 @@
         </div><!--plusBlock-->
     </div><!--wrapper-->
 </section><!--plusSection-->
-
-<section class="certSection">
+<section class="certSection animate" data-animate="slideInUp">
     <div class="wrapper">
         <div class="certBlock">
-            <h2>
+            <h2 class="animate" data-animate="flipInX">
                 Наши <b>сертификаты</b>
             </h2>
             <div class="certItem">
-                <a data-fancybox="gallery" href="img/1.jpg">
+                <a data-fancybox="gallery" href="img/1.jpg" class="animate" data-animate="toLeft">
                     <img src="img/1-sm.png" alt="">
                     <span class="lupa"></span>
                 </a>
-                <a data-fancybox="gallery" href="img/2.jpg">
+                <a data-fancybox="gallery" href="img/2.jpg" class="animate" data-animate="slideInUp">
                     <img src="img/2-sm.png" alt="">
                     <span class="lupa"></span>
                 </a>
-                <a data-fancybox="gallery" href="img/3.jpg">
+                <a data-fancybox="gallery" href="img/3.jpg" class="animate" data-animate="toRight">
                     <img src="img/3-sm.png" alt="">
                     <span class="lupa"></span>
                 </a>
@@ -405,15 +397,14 @@
         </div><!--certBlock-->
     </div><!--wrapper-->
 </section><!--certSection-->
-
-<section class="revSection">
+<section class="revSection  animate" data-animate="fadeIn">
     <div class="wrapper">
         <div class="revBgBlock">
             <div class="revBlock">
-                <h2>
+                <h2 class="animate" data-animate="flipInX">
                     <b>отзывы</b> о нас
                 </h2>
-                <div class="revSlider">
+                <div class="revSlider  animate" data-animate="fadeIn">
                     <div class="revSlider__item">
                         <div class="revSl">
                             <div class="revSl__img">
@@ -451,8 +442,7 @@
         </div><!--revBgBlock-->
     </div><!--wrapper-->
 </section><!--revSection-->
-
-<section class="workSection">
+<section class="workSection animate" data-animate="fadeIn">
     <div class="wrapper">
         <div class="workBlock">
             <h2>
@@ -533,10 +523,9 @@
         </a>
     </div><!--wrapper-->
 </section><!--workSection-->
-
-<section class="revSection  revSection--formSection" id="form">
+<section class="revSection  revSection--formSection  animate" id="form" data-animate="fadeIn">
     <div class="wrapper">
-        <div class="formSectionBlock">
+        <div class="formSectionBlock animate" data-animate="slideInUp">
             <div class="formTextBlock">
                 <p>
                     прямо сейчас вы можете
@@ -565,8 +554,7 @@
         </div><!--formSectionBlock-->
     </div><!--wrapper-->
 </section><!--revSection-->
-
-<section class="mapSection">
+<section class="mapSection animate" data-animate="fadeIn">
     <!--<div id="map"></div>-->
     <div class="wrap">
         <div class="map">
@@ -574,7 +562,6 @@
         </div>
     </div>
 </section>
-
 <footer class="footer">
     <div class="wrapper">
         <div class="footerBlock">
@@ -612,7 +599,6 @@
         </div><!--footerBlock-->
     </div><!--wrapper-->
 </footer>
-
 <!--Конец кода-->
 <!--Slick-->
 <script src="js/jquery-3.2.1.min.js"></script>
@@ -701,6 +687,67 @@
                 }
             } // for
         }); // submit
+
+        /*анимация*/
+        var animateCss = (function () {
+
+            var checkDistance = function (scrollTop, elem) {
+
+                var offset = elem.offset().top,
+                    windowMarginTop = Math.ceil($(window).innerHeight() / 3),
+                    elemTopBorder = offset - scrollTop - windowMarginTop,
+                    bottomEdge = elem.outerHeight(true) + offset,
+                    elemBottomBorder = scrollTop + windowMarginTop - bottomEdge;
+
+                    return elemTopBorder <= 0 && elemBottomBorder <= 0;
+            }; // checkDistance
+
+            var animationAction =  {
+
+                fadeIn : function () {
+                    $(this).addClass('fadeIn');
+                },
+                flipInX : function () {
+                    $(this).addClass('flipInX');
+                },
+                slideInUp : function () {
+                    $(this).addClass('slideInUp');
+                },
+                toLeft : function () {
+                    $(this).addClass('toLeft');
+                },
+                toRight : function () {
+                    $(this).addClass('toRight');
+                },
+
+            }; // animationAction
+
+            return{
+                init : function () {
+
+                    $(window).on('scroll', function () {
+
+                        var scrollTop = $(window).scrollTop(),
+                            elem = $('.animate');
+
+                        elem.each(function () {
+                            var $this = $(this);
+
+                            if(checkDistance(scrollTop, $this)){
+
+                                var animationType = $this.data('animate');
+                                animationAction[animationType].call($this);
+
+                            }
+                        }); // each()
+                    }) // scroll
+                } // init
+            } // return
+
+        }()); // animateCss
+
+        animateCss.init();
+
     }); // ready
 </script>
 </body>
